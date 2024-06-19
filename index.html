@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/563ee21228.js" crossorigin="anonymous"></script>
 </head>
 <!--   hjfgrjwhhfwsss 455aa-->
 
 <body>
-    <div>
+    <div class="BodyCorp">
         <!--BARRA IZQUIERDA-->
         <div class="sidebar" id="sidebar">
             <!--IMAGENES DE LAS REDES-->
@@ -31,11 +32,54 @@
                 alt="">
         </div>
         <!--ENTRADA A LAS DEMAS SECCIONES-->
-        <div id="sections">
-            <button>CONSULTORIA</button>
-            <button>ESTRATEGIAS</button>
-            <button>CAMPAÑA DE PUBLICIDAD</button>
+         <!--
+        <div id="containerBtnsTwo">
+            <div id="sectionButtonsTwo">
+                
+            </div>
+            <div><button id="BtnChangeLeft"></button></div>
         </div>
+    -->
+        <div class="containerButtons">
+            <div class="itemsButtons" id="itemsButtons-1">
+                
+                <div class="buttons">
+                    <a href="campaña.html">CAMPAÑA</a>
+                </div>
+                <div class="flechasDI">
+                    <a class="animated-link" href="#itemsButtons-3" onclick="changeBtn(1,3, event,'I')"><i class="fa-solid fa-arrow-left"></i></a>
+                    <a class="animated-link" href="#itemsButtons-2" onclick="changeBtn(1,2, event,'D')"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="itemsButtons" id="itemsButtons-2">
+                <div class="buttons">
+                    <a href="estrategias.html">ESTRATEGIAS</a>
+                </div>
+                <div class="flechasDI">
+                    <a href="#itemsButtons-1" onclick="changeBtn(2,1, event,'I')"><i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="#itemsButtons-3" onclick="changeBtn(2,3, event,'D')"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="itemsButtons" id="itemsButtons-3">
+                <div class="buttons">
+                    <a href="consultoria.html">CONSULTORIA</a>
+                </div>
+                <div class="flechasDI">
+                    <a href="#itemsButtons-2" onclick="changeBtn(3,2, event,'I')"><i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="#itemsButtons-1" onclick="changeBtn(3,1, event,'D')"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+         <!--
+        <div id="containerBtns">
+            
+            <div id="sectionButtons">
+                
+                <button id="BtnCon" onclick="window.location.href='consultoria.html'">CONSULTORIA</button>
+                
+            </div>
+        </div>
+        -->
     </div>
 </body>
 <script src="js.js"></script>

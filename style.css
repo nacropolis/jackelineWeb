@@ -1,19 +1,23 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 #logos{
-    background-image: url("https://images6.alphacoders.com/353/thumb-1920-353689.png");
+
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 5%;
+    
 }
 #logo{
-    margin-left: 23%;
+    position: absolute;
+    z-index: 10 ;
+    
     border: 5px black solid;
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height: 1%;
+    opacity: 0;
 }
 .sidebar{
     display: flex;
@@ -53,16 +57,151 @@
     z-index: 1;
     position: absolute;
 }
-
-#sections{
-    padding-top: 10%;
+#containerBtns{
+    
     margin-left: 23%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionButtons{
+    
+    bottom: 0;
+}
+#sectionButtons button {
+    padding: 20px;
+    min-width: 50vh;
+    
+    top: 0;
+    left: 0;
+}
+ #BtnCon{
+    
+    font-size: 3vh;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 2px 1px rgba(213, 0, 0, 0.2);
+    border-color: rgb(138, 213, 232);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 25%;
+}
+
+
+#containerBtnsTwo{
+    padding-top: 22%;
+    margin-left: 22%;
     display: flex;
     justify-content: space-around;
+     position:  sticky;
+    
 }
-#sections button{
-    padding: 3%;
-    border-radius: 15%;
+#sectionButtonsTwo{
+    position: absolute;
+    
+    width: 78%;
+}
+#sectionButtonsTwo button {
+    padding: 5vh;
+    min-width: 5vh;
 
+    
+   
 }
 
+#BtnChangeRight{
+
+    
+    box-shadow: 2px 2px 2px 1px rgba(213, 0, 0, 0.2);
+    border-color: rgb(138, 213, 232);
+    
+    border-radius: 50%;
+}
+#BtnChangeLeft{
+    
+    
+    box-shadow: 2px 2px 2px 1px rgba(213, 0, 0, 0.2);
+    border-color: rgb(138, 213, 232);
+    border-radius: 50%;
+    
+    
+}
+.containerButtons{
+    margin-right: 5%;
+    position: relative;
+    top:30vh;
+    
+    margin-left: 25%;
+    height: 200px;
+    overflow: hidden;
+}
+.itemsButtons{
+    
+    border: 5px solid black;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+     
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+    z-index: 2;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+}
+.flechasDI{
+
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+}
+#itemsButtons-1{
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px 1px rgba(213, 0, 0, 0.2);
+    border-color: rgb(138, 213, 232);
+    
+}
+#itemsButtons-2{
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px 1px rgba(114, 0, 213, 0.2);
+    border-color: rgb(232, 191, 138);
+}
+#itemsButtons-3{
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px 1px rgba(28, 213, 0, 0.2);
+    border-color: rgb(226, 138, 232);
+}
+a{
+    text-decoration: none;
+}
+.itemsButtons {
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.itemsButtons.fade-outI {
+    opacity: 0;
+    transform: translateX(100%);
+}
+.itemsButtons.fade-outD {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.itemsButtons.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
